@@ -1,0 +1,13 @@
+# Build output - ship the exe through GitHub Releases, not the repo
+*.exe
+
+# Personal branding stays local (app.ico / app.png / app.jpg are picked up at runtime)
+app.ico
+app.png
+app.jpg
+sonic-*.*
+
+# Runtime leftovers
+Extractor-error.log
+.extract_tmp_*/
+*.bak

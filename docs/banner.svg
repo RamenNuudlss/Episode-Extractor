@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="t d">
+  <title id="t">Episode Extractor</title>
+  <desc id="d">RAR episode releases go in, a Plex-ready Show / Season / episode folder comes out.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F1115"/>
+      <stop offset="1" stop-color="#161C2A"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7BFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2F7BFF" stop-opacity="0.18"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#dots)"/>
+  <rect x="640" width="640" height="360" rx="24" fill="url(#glow)"/>
+
+  <!-- Title block -->
+  <g font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif">
+    <text x="72" y="148" font-size="62" font-weight="700" fill="#E8EAF0">Episode Extractor</text>
+    <text x="74" y="196" font-size="25" fill="#8B93A5">RAR releases in. Plex-ready library out.</text>
+
+    <g font-size="15" font-weight="600">
+      <rect x="72" y="232" width="200" height="34" rx="17" fill="#1A2540"/>
+      <text x="172" y="254" text-anchor="middle" fill="#9CC0FF">Smart S01E05 detection</text>
+      <rect x="284" y="232" width="130" height="34" rx="17" fill="#1A2540"/>
+      <text x="349" y="254" text-anchor="middle" fill="#9CC0FF">Plex layout</text>
+      <rect x="426" y="232" width="150" height="34" rx="17" fill="#2A2412"/>
+      <text x="501" y="254" text-anchor="middle" fill="#FFC857">Windows 10 / 11</text>
+    </g>
+  </g>
+
+  <!-- Archive volumes -->
+  <g font-family="Cascadia Mono, Consolas, Menlo, monospace" font-size="15" font-weight="600">
+    <rect x="742" y="96"  width="128" height="46" rx="10" fill="#1E222B" stroke="#2E3441"/>
+    <text x="806" y="125" text-anchor="middle" fill="#8B93A5">.r01</text>
+    <rect x="730" y="150" width="128" height="46" rx="10" fill="#1E222B" stroke="#2E3441"/>
+    <text x="794" y="179" text-anchor="middle" fill="#8B93A5">.r00</text>
+    <rect x="718" y="204" width="128" height="46" rx="10" fill="#22304D" stroke="#2F7BFF"/>
+    <text x="782" y="233" text-anchor="middle" fill="#E8EAF0">.rar</text>
+  </g>
+
+  <!-- Arrow -->
+  <g stroke="#2F7BFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M 886 178 L 940 178"/>
+    <path d="M 926 164 L 942 178 L 926 192"/>
+  </g>
+
+  <!-- Plex folder card -->
+  <g>
+    <rect x="962" y="90" width="262" height="176" rx="16" fill="#171A21" stroke="#2A2F3A"/>
+    <circle cx="986" cy="112" r="5" fill="#FF5C6C"/>
+    <circle cx="1004" cy="112" r="5" fill="#FFC857"/>
+    <circle cx="1022" cy="112" r="5" fill="#3DDC84"/>
+    <g font-family="Cascadia Mono, Consolas, Menlo, monospace" font-size="14">
+      <text x="984" y="150" fill="#E8EAF0">Show Name/</text>
+      <text x="1000" y="180" fill="#9CC0FF">Season 01/</text>
+      <text x="1016" y="210" fill="#3DDC84">s01e05.mkv</text>
+      <text x="1016" y="238" fill="#6B7385">s01e05.en.srt</text>
+    </g>
+  </g>
+</svg>
